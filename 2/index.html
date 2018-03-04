@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="./files/bootstrap.css">
+	<link rel="stylesheet" href="./files/style.css">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 logo">
+					<div class="name_company"></div>
+					<div class="name_company_text">
+						<p>Название компании</p>
+						<p>самая клёвая компания</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-4 col-xs-offset-0 phone text-right">
+					<span>+7(499) 777-77-77</span>
+					<span>+7(499) 777-77-77</span>
+					<a data-toggle="modal" data-target="#exampleModal" href="#">Обратная связь</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar navbar-default sticky">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<menu class="nav navbar-nav">
+					<li class="active"><a onclick="get_content('./main.html')" href="#">Главная</a></li>
+					<li><a onclick="get_content('./main.html')" href="#">Каталог</a></li>
+					<li><a onclick="get_content('./main.html')" href="#">Доставка и оплата</a></li>
+					<li><a onclick="get_content('./main.html')" href="#">Прайс-лист</a></li>
+					<li><a onclick="get_content('./main.html')" href="#">Контакты</a></li>
+				</menu>
+			</div>
+		</div>
+	</nav>
+	<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+		<ol class="carousel-indicators hidden">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="./files/1.jpg" height="462" width="1248" alt="slide1">
+				<div class="carousel-caption"></div>
+			</div>
+			<div class="item">
+				<img src="./files/2.jpg" height="462" width="1248" alt="slide2">
+				<div class="carousel-caption"></div>
+			</div>
+		</div>
+		<div class="container rel">
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<section class="content">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li class="active">Бытовая техника</li>
+			</ol>
+			<div id="page_content"></div>
+			<div class="row">
+				<aside class="col-md-3 leftblock">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading1">
+								<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapse1">Автомобили</a></h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+								<ul class="panel-body">
+								</ul>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading2">
+								<h4 class="panel-title active"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="true" aria-controls="collapse2">Бытовая техника</a></h4>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
+								<ul class="panel-body">
+									<li><a class="active" href="#">Микроволновки</a></li>
+									<li><a href="#">Холодильники</a></li>
+									<li><a href="#">Посудомоечные машины</a></li>
+									<li><a href="#">Чайники</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading3">
+								<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapse3">Мобильная техника</a></h4>
+							</div>
+							<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+								<ul class="panel-body">
+								</ul>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading4">
+								<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapse4">Компьютеры</a></h4>
+							</div>
+							<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+								<ul class="panel-body">
+								</ul>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading5">
+								<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapse5">Одежда</a></h4>
+							</div>
+							<div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+								<ul class="panel-body">
+								</ul>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading6">
+								<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="false" aria-controls="collapse6">Недижимость</a></h4>
+							</div>
+							<div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+								<ul class="panel-body">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="download-price">
+						<a href="#">Прайс-лист</a>
+					</div>
+				</aside>
+				<div class="col-md-9 centerblock">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 card-product">
+							<figure>
+								<div class="wrap-img"></div>
+								<figcaption>
+									<h4>Самый клевый чайник, который надо купить!</h4>
+								</figcaption>
+								<div class="price">1900 p.
+									<a href="#" class="add-to-cart"></a>
+								</div>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 card-product">
+							<figure>
+								<div class="wrap-img"></div>
+								<figcaption>
+									<h4>Самый клевый чайник, который надо купить!</h4>
+								</figcaption>
+								<div class="price">1900 p.
+									<a href="#" class="add-to-cart"></a>
+								</div>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 card-product">
+							<figure>
+								<div class="wrap-img"></div>
+								<figcaption>
+									<h4>Самый клевый чайник, который надо купить!</h4>
+								</figcaption>
+								<div class="price">1900 p.
+									<a href="#" class="add-to-cart"></a>
+								</div>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 card-product">
+							<figure>
+								<div class="wrap-img"></div>
+								<figcaption>
+									<h4>Самый клевый чайник, который надо купить!</h4>
+								</figcaption>
+								<div class="price">1900 p.
+									<a href="#" class="add-to-cart"></a>
+								</div>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6 card-product">
+							<figure>
+								<div class="wrap-img"></div>
+								<figcaption>
+									<h4>Самый клевый чайник, который надо купить!</h4>
+								</figcaption>
+								<div class="price">1900 p.
+									<a href="#" class="add-to-cart"></a>
+								</div>
+							</figure>
+						</div>
+					</div>
+					<nav class="text-center row __hrbot">
+						<ul class="pagination">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="active"><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+						</ul>
+					</nav>
+					<div class="row">
+						<div class="col-md-6">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim qui ex, hic iure obcaecati vel eos eligendi, nihil tempore, aperiam aspernatur possimus mollitia fugiat placeat omnis suscipit sequi quasi minus rerum. Magni minus ad consectetur dolorum nisi magnam qui iste unde sit ipsam, perspiciatis voluptate impedit. Eius libero unde aspernatur sapiente vero dignissimos, aperiam odio doloribus explicabo ex, ratione ipsa nam recusandae commodi, nisi fuga tempore! A maxime repudiandae omnis esse laborum unde quam neque, deserunt cupiditate enim eveniet pariatur quis, ut corporis quo quaerat adipisci. Assumenda laudantium esse quo eius cumque aspernatur praesentium odit nulla vero, optio quos, voluptatem doloremque tempore iusto deserunt. Ratione, enim, magnam. Perspiciatis quo fugit qui molestiae, aliquam ipsa! Ex provident, excepturi incidunt, est repudiandae, quo fuga asperiores aspernatur harum similique eaque. Aut dicta eligendi delectus optio neque reprehenderit! Deserunt eius dolore repellat quam fugiat. Possimus perspiciatis laboriosam rem ipsam, molestiae vel sapiente quidem quasi?</p>
+						</div>
+						<div class="col-md-6">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus vitae debitis incidunt enim commodi delectus pariatur, sapiente reiciendis mollitia facere hic, quisquam modi sequi. Reprehenderit distinctio, mollitia! Esse obcaecati, sapiente nisi saepe ratione odio placeat eaque, itaque laborum rem, deserunt quas. Expedita tempore maxime facere veritatis pariatur commodi repudiandae esse magnam reiciendis enim aperiam quae, quaerat ratione officia magni quasi, eaque eveniet consequuntur ipsa dignissimos. Amet aliquid fuga molestias ducimus facere vero sint debitis minima iste blanditiis beatae minus pariatur numquam optio quam tempora dolorum eius qui exercitationem natus nihil cupiditate, quod, deleniti? Exercitationem nesciunt molestiae nam. Molestiae odit obcaecati recusandae, laudantium quibusdam cum, voluptates expedita. Distinctio ab sit eligendi ea necessitatibus sint atque voluptates itaque animi nam quia, magnam expedita doloribus quod eaque enim nobis sapiente deserunt, quas porro! Repellat necessitatibus, dignissimos sapiente nostrum facilis quae eveniet dolore quam nulla, officia quo unde a odio ullam, nesciunt repellendus inventore.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<p class="__mod3">© 2012–2013 ЗАО «Компания»</p>
+					<a href="mailto:info@name.ru">info@name.ru</a>
+				</div>
+				<div class="col-md-4 col-md-offset-1">
+					<nav>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="#">Контакты</a></li>
+					</nav>
+				</div>
+				<div class="col-md-4 logo">
+					<div class="name_company_white"></div>
+					<div class="name_company_text_white">
+						<p>Название компании</p>
+						<p>самая клёвая компания</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">✕</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">Обратная связь</h4>
+				</div>
+				<div class="modal-body">
+					<form id="form" action="./mail.php" method="post">
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">Ваше имя *</label>
+							<input type="text" name="name" class="form-control" id="recipient-name" required>
+						</div>
+						<div class="form-group">
+							<label for="recipient-phone" class="control-label">Телефон *</label>
+							<input type="tel" name="phone" class="form-control" id="recipient-phone" required>
+						</div>
+						<div class="form-group">
+							<label for="recipient-email" class="control-label">Email *</label>
+							<input type="email" name="email" class="form-control" id="recipient-email" required>
+						</div>
+						<div class="form-group">
+							<label for="message-text" class="control-label">Сообщение</label>
+							<textarea name="message" class="form-control" id="message-text" rows="6"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" form="form" class="btn btn-primary center-block">Отправить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./files/jquery.min.js"></script>
+	<script src="./files/bootstrap.min.js"></script>
+	<script src="./files/main.js"></script>
+
+</body>
+
+</html>
